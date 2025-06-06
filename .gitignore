@@ -1,0 +1,17 @@
+# Ambiente virtual
+venv/
+
+# Arquivos Python compilados
+__pycache__/
+*.pyc
+
+# Arquivos de log ou temporários
+*.log
+*.tmp
+
+# Configurações de IDEs (como VS Code ou PyCharm)
+.vscode/
+.idea/
+
+# Arquivos específicos do MacOS
+.DS_Store
