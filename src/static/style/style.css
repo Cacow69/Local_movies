@@ -1,0 +1,265 @@
+/* Cores */
+:root{
+    --cinza: #52524F;
+    --branco: #FBFEED;
+    --amarelo-claro: #FFD051;
+    --amarelo: #FF9E00;
+    --preto: #000000;
+}
+
+
+/*ScrollBar*/
+::-webkit-scrollbar {
+  width: 10px;
+  background-color: var(--cinza);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--preto); 
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--amarelo-claro); 
+}
+
+
+/*Fonte personalizada*/
+@font-face {
+    font-family: "Font-titulo";
+    src: url("../fonts/LemonFunkyTTF.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Font-titulo-2";
+    src: url("../fonts/Blackest.otf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Font-paragrafo";
+    src: url("../fonts/Lora-VariableFont_wght.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+/* Geral */
+
+*{
+    margin: 0;
+}
+
+p, span, a{
+  font-family: "Font-paragrafo", sans-serif;
+}
+
+a{
+  text-decoration: none;
+  color: #000;
+}
+
+hr{
+  width: 100%; 
+  height: 2px; 
+  background-color: var(--preto); 
+  border: none; 
+  margin: 20px 0;
+}
+
+main{
+  background-color: var(--branco);
+}
+
+footer{
+  display: grid;
+  grid-template-columns: auto;
+  background-color: var(--preto);
+}
+
+#cubo{
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--amarelo-claro);
+  padding: 10px 20px;
+  border-bottom: 2px solid black;
+}
+
+.left-section, .right-section {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+
+    .left-section img {
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+    }
+
+    .left-section span {
+      font-weight: bold;
+    }
+
+    .right-section i,
+    .right-section img {
+      width: 18px;
+      height: 18px;
+    }
+
+    .link {
+      cursor: pointer;
+    }
+
+    .right-section span {
+      font-size: 14px;
+    }
+
+.inicio{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    background-color: var(--amarelo);
+    height: 80vh;
+}
+
+#titulo{
+  font-family: "Font-titulo-2", sans-serif;
+  text-align: left;
+  align-self: flex-end;
+  font-size: 150px;
+  padding: 50px;
+}
+
+#titulo-footer{
+  font-family: "Font-titulo-2", sans-serif;
+  text-align: center;
+  align-self: flex-end;
+  font-size: 80px;
+  color: var(--amarelo-claro);
+}
+
+#titulo-card{
+  font-family: "Font-titulo-2", sans-serif;
+  text-align: center;
+  align-self: flex-end;
+  font-size: 30px;
+  color: var(--preto);
+}
+
+#popcorn{
+  max-height: 500px;
+  align-self: flex-end;
+}
+
+#data{
+  font-weight: bold;
+}
+
+
+.card-titulo{
+  grid-column-start: 1;
+  grid-column-end: 2;
+  background-color: var(--amarelo-claro);
+  border-bottom: 2px solid var(--preto);
+}
+
+.card-main{
+  display: grid;
+  grid-template-columns: auto;
+  width: 90%;
+  margin-left: 5%;
+  background-color: var(--branco);
+  border: 2px solid var(--preto);
+}
+
+.card-main > p{
+  font-size: 20px;
+  font-weight: bold;
+  text-align: justify;
+  padding: 20px;
+}
+
+p > span{
+  font-size: 20px;
+  color: var(--amarelo);
+}
+
+.link{
+  font-weight: bold;
+}
+
+.link:hover{
+  
+}
+
+
+
+/* Cubo Mágico (Vindo do site https://uiverse.io/lukepadiachy/funny-moose-89) */
+.my-loader {
+  width: 100px;
+  height: 100px;
+  perspective: 500px;
+  margin: 50px auto;
+  justify-content:
+}
+
+.rubiks-cube {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform-style: preserve-3d;
+  animation: my-rotateCube 5s infinite linear;
+}
+
+.my-loader .face {
+  position: absolute;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 100%;
+}
+
+.my-loader .face.front {
+  transform: translateZ(50px);
+}
+.my-loader .face.back {
+  transform: rotateY(180deg) translateZ(50px);
+}
+.my-loader .face.left {
+  transform: rotateY(-90deg) translateZ(50px);
+}
+.my-loader .face.right {
+  transform: rotateY(90deg) translateZ(50px);
+}
+.my-loader .face.top {
+  transform: rotateX(90deg) translateZ(50px);
+}
+.my-loader .face.bottom {
+  transform: rotateX(-90deg) translateZ(50px);
+}
+
+.my-loader .cube {
+  width: calc(100% / 3);
+  height: calc(100% / 3);
+  box-sizing: border-box;
+  border: 1px solid #000;
+}
+
+@keyframes my-rotateCube {
+  0% {
+    transform: rotateX(0deg) rotateY(0deg);
+  }
+  100% {
+    transform: rotateX(360deg) rotateY(360deg);
+  }
+}
