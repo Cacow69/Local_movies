@@ -42,3 +42,40 @@ Para garantir um sistema mais funcional e eficiente, o projeto está sendo desen
 
 <br>
 <br>
+
+## 🛠️ Instalação
+
+Para rodar o **Local Movies** localmente, siga os passos abaixo:
+
+1. **Clone o repositório**
+   ```bash
+   git clone https://github.com/Cacow69/Local_movies.git
+   cd Local_movies
+   ```
+
+2. **Crie um ambiente virtual**
+   ```bash
+   python -m venv venv
+   source venv/bin/activate  # Linux/macOS
+   venv\Scripts\activate     # Windows
+   ```
+
+3. **Instale as dependências**
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+4. **Execute o sistema**
+   ```bash
+   python app.py
+   ```
+
+5. Acesse no navegador:
+   ```
+   http://localhost:5000
+   ```
+
+> ⚠️ Certifique-se de ter o **Python 3.10+** instalado em sua máquina.
+
+<br>
+<br>
