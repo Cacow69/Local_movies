@@ -1,2 +1,44 @@
-# Local_movies
-Um sistema que permite transmitir arquivos de vídeo de um dispositivo para outros através da rede
+<img src="src/static/img/logo.jpg" alt="logo">
+<hr>
+
+<br>
+<br>
+
+## **🤔 Sobre o projeto**
+O sistema tem o objetivo de **Ler e Transmitir** arquivos de vídeo de um dispositivo "raiz" para outros que estiverem conectados à mesma rede! 
+O Local Movies **NÃO FORNECE ARQUIVOS E MUITO MENOS PROMOVE A PIRATARIA**, é apenas uma solução prática para o consumo de arquivos próprios.
+
+ **🎯 Principais objetivos**
+- Facilitar a visualização de arquivos de vídeo. 
+- Centralizar as informações em um sistema local.
+- Disponibilizar arquivos para outros dispositivos através da rede.  
+
+
+<br> 
+<br>
+
+
+## **💻 Linguagens utilizadas**
+
+<br>
+
+<p align="center">
+      <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5"/>
+      <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3"/>
+      <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript"/>
+      <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python"/>
+</p>
+
+<br>
+<br>
+
+
+## **🚀 Recursos**
+
+Para garantir um sistema mais funcional e eficiente, o projeto está sendo desenvolvido utilizando as seguintes tecnologias:
+
+- **[Visual Studio Code](https://code.visualstudio.com/)**: Editor de código leve e versátil, com suporte a extensões e múltiplas linguagens.
+- **[GitHub](https://github.com/)**: Plataforma online para hospedagem e colaboração em projetos de código, usando controle de versão com Git.
+
+<br>
+<br>
