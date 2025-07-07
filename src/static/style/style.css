@@ -4,7 +4,18 @@
     --branco: #FBFEED;
     --amarelo-claro: #FFD051;
     --amarelo: #FF9E00;
+    --laranja: #ff7300;
     --preto: #000000;
+}
+
+/* Legendas */
+::cue {
+  color: rgb(255, 255, 236);
+  background-color: rgba(7, 7, 7, 0.7);
+  font-size: 15px;
+  font-family: 'Font-legenda', sans-serif;
+  text-shadow: 2px 2px 4px #000000;
+  width: 80%;
 }
 
 
@@ -22,6 +33,12 @@
 ::-webkit-scrollbar-thumb:hover {
   background: var(--amarelo-claro); 
 }
+
+/* Seleção do texto */
+::selection {
+    color: white;
+    background-color: var(--laranja);
+  }
 
 
 /*Fonte personalizada*/
@@ -46,6 +63,13 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: "Font-legenda";
+    src: url("../fonts/Montserrat-VariableFont_wght.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
 
 
 /* Geral */
@@ -61,6 +85,11 @@ p, span, a{
 a{
   text-decoration: none;
   color: #000;
+  transition: ease 0.6s all;
+}
+
+a:hover{
+  color: var(--laranja)
 }
 
 hr{
@@ -199,7 +228,80 @@ p > span{
 }
 
 .link:hover{
-  
+  color: var(--branco);
+}
+
+.video-back-container{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.video-container{
+  width: 700px;
+  margin-left: 2%;
+  background-color: var(--amarelo-claro);
+  margin-top: 2%;
+  border: 3px solid var(--preto);
+  transition: ease 0.6s all;
+}
+
+.video-container:hover{
+  transform: scale(1.02);
+}
+
+.video-titulo{
+  font-family: "Font-titulo-2", sans-serif;
+  font-weight: bold;
+  font-size: 30px;
+  padding: 10px 10px 10px 10px;
+  text-align: center;
+}
+
+.video{
+  margin-left: 4%;
+  margin-bottom: 10px;
+}
+
+/* Estilos para telas menores que 768px */
+@media (max-width: 767px) {
+  .container {
+    width: 95%;
+  }
+
+  #titulo{
+    font-size: 75px;
+  }
+
+  #popcorn{
+    max-height: 300px;
+    margin-left: 20%;
+  }
+
+  .inicio{
+    grid-template-columns: 1fr;
+  }
+
+  .left-section{
+    margin-right: 12%;
+  }
+
+  #titulo-footer{
+    font-size: 50px;
+  }
+
+  .video-container{
+    max-width: 310px;
+    margin: auto;
+    margin-top: 5%;
+  }
+
+  .video{
+    max-width: 280px;
+  }
+
+  #titulo-card{
+    font-size: 25px;
+  }
 }
 
 

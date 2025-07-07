@@ -14,7 +14,6 @@
             <span>* Local Movies |</span>
             <div class="link"><a href="/">Início</a></div>
             <div class="link"><a href="/videos">Vídeos</a></div>
-            <div class="link">Configurações</div>
         </div>
 
         <div class="right-section">
@@ -23,19 +22,9 @@
         </div>
     </header>
 
-    VIDEOS
 
     <main>
-        <div class="card-main">
-            <div class="card-titulo">
-                <h1 id="titulo-card">* SOBRE O SISTEMA *</h1>
-            </div>
-            <br>
-            <p>O sistema tem o objetivo de <span>Ler</span> e <span>Transmitir</span> arquivos de
-            vídeo de um dispositivo "raiz" para outros que estiverem conectados à mesma rede! O sistema
-            <span>NÃO FORNECE ARQUIVOS NEM PROMOVE A PIRATARIA</span>, é apenas uma solução prática para
-            o consumo de arquivos próprios.</p>
-        </div>
+        {% block content %}{% endblock %}
     </main>
 
     <hr>

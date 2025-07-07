@@ -1,0 +1,31 @@
+{% extends 'vw_template.html' %}
+{% block content %}
+<br>
+        <div class="card-main">
+            <div class="card-titulo">
+                <h1 id="titulo-card">* FILMES DISPONÍVEIS *</h1>
+            </div>
+            <br>
+            <p>Nessa página, você pode <span>visualizar</span> e <span>assistir</span> arquivos de
+            vídeo direto do seu diretório local! O sistema
+            <span>NÃO FORNECE ARQUIVOS NEM PROMOVE A PIRATARIA</span>, é apenas uma solução prática para
+            o consumo de arquivos próprios.</p>
+        </div>
+
+        <div class="video-back-container">
+            {% for item in videos %}
+                <div class="video-container">
+                    <h3 class="video-titulo">{{ item.video[:-4] }}</h3>
+                    <hr>
+                    <video width="640" controls class="video">
+                        <source src="{{ url_for('serve_video', filename=item.video) }}" type="video/mp4">
+                        {% if item.legenda %}
+                            <track src="{{ url_for('serve_video', filename=item.legenda) }}" kind="subtitles" srclang="pt" label="Português" default>
+                        {% endif %}
+                        Seu navegador não suporta vídeo HTML5.
+                    </video>
+                </div>
+            {% endfor %}
+        </div>
+   
+{% endblock %}
