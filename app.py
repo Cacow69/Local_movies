@@ -13,7 +13,7 @@ titulo = pyfiglet.figlet_format("LOCAL MOVIES")
 src_path = os.path.join(os.path.dirname(__file__), "src")
 
 # Caminho absoluto para a pasta dos vídeos
-PASTA_VIDEOS = r'C:\FILMES'
+PASTA_VIDEOS = r'COLE O DIRETORIO DOS ARQUIVOS'
 
 
 # Criação da aplicação Flask com os caminhos personalizados
