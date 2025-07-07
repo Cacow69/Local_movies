@@ -75,6 +75,17 @@ Para rodar o **Local Movies** localmente, siga os passos abaixo:
    http://localhost:5000
    ```
 
+## 📢 Solução de problemas
+
+O **Local Movies** pode aprenstar problemas na hora de ser acessado por outros dispositivos,
+siga os passos para a resolução:
+
+```
+Abra o Painel de Controle → Sistema e Segurança → Firewall do Windows Defender → Permitir um aplicativo pelo Firewall do Windows.
+```
+Selecione o executável do Python **"python.exe"** e clique em **Alterar configurações**.
+
+
 > ⚠️ Certifique-se de ter o **Python 3.10+** instalado em sua máquina.
 
 <br>
