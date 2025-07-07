@@ -2,6 +2,12 @@ from flask import Flask, render_template, url_for, send_from_directory, request
 import os
 from datetime import datetime
 from tkinter import Tk, filedialog
+import pyfiglet
+from rich import print
+import socket
+
+#Palavra legal no terminal
+titulo = pyfiglet.figlet_format("LOCAL MOVIES")
 
 # Caminho absoluto da pasta "src"
 src_path = os.path.join(os.path.dirname(__file__), "src")
@@ -82,5 +88,11 @@ def serve_video(filename):
     return send_from_directory(PASTA_VIDEOS, filename)
 
 
+
 if __name__ == '__main__':
+     if os.environ.get("WERKZEUG_RUN_MAIN") == "true":
+        print(f"[yellow]{titulo}[/yellow]")
+        print("[purple]>>> Ambiente virtual ativado com sucesso.[/purple]")
      app.run(host='0.0.0.0', port=5000, debug=True)
+
+
