@@ -67,7 +67,7 @@ Para rodar o **Local Movies** localmente, siga os passos abaixo:
 
 4. **Execute o sistema**
    ```bash
-   python app.py
+   python app.py ou abra o 'Local Movies.bat'
    ```
 
 5. Acesse no navegador:
@@ -80,10 +80,22 @@ Para rodar o **Local Movies** localmente, siga os passos abaixo:
 O **Local Movies** pode aprenstar problemas na hora de ser acessado por outros dispositivos,
 siga os passos para a resolução:
 
+1. Firewall:
 ```
 Abra o Painel de Controle → Sistema e Segurança → Firewall do Windows Defender → Permitir um aplicativo pelo Firewall do Windows.
 ```
 Selecione o executável do Python **"python.exe"** e clique em **Alterar configurações**.
+
+2. IP de acesso:
+```
+Quando o servidor é rodado, aparecem dois IP's. para acessar de outro dispositivo, acesse o que começa com 192.168.x.x
+```
+
+3. Arquivo loader:
+```
+Caso queira usar o .bat em outro diretório, basta edita-lo com o bloco de notas e colar o caminho completo para o diretório raiz.
+```
+
 
 
 > ⚠️ Certifique-se de ter o **Python 3.10+** instalado em sua máquina.
