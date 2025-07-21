@@ -77,7 +77,7 @@ Para rodar o **Local Movies** localmente, siga os passos abaixo:
 
 ## 📢 Solução de problemas
 
-O **Local Movies** pode aprenstar problemas na hora de ser acessado por outros dispositivos,
+O **Local Movies** pode apresentar problemas na hora de ser acessado por outros dispositivos,
 siga os passos para a resolução:
 
 1. Firewall:
